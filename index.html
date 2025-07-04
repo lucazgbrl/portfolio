@@ -2,12 +2,12 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minha Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minha Landing Page - Tema Escuro</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Cabeçalho com menu de navegação -->
+    <!-- Cabeçalho com menu fixo -->
     <header>
       <nav>
         <ul>
@@ -19,38 +19,75 @@
       </nav>
     </header>
 
-    <!-- Seção Sobre mim -->
-    <section id="sobre">
+    <!-- Sobre mim -->
+    <section id="sobre" class="container">
       <h2>Sobre mim</h2>
-      <p><!-- Escreva aqui um resumo sobre você --></p>
+      <div class="sobre-content">
+        <img src="me nike.jpeg" alt="Foto do Lucas" class="foto-sobre" />
+        <p>
+          Olá! Sou Lucas, desenvolvedor de software apaixonado por qualidade e
+          eficiência. Minha paixão é implementar soluções que façam a diferença
+          na vida dos clientes e que mostrem o verdadeiro sentido da tecnologia.
+        </p>
+      </div>
     </section>
 
-    <!-- Seção Formação -->
-    <section id="formacao">
+    <!-- Formação -->
+    <section id="formacao" class="container">
       <h2>Minha formação</h2>
-      <p><!-- Descreva sua formação acadêmica e cursos relevantes --></p>
-    </section>
-
-    <!-- Seção Portfólio -->
-    <section id="portfolio">
-      <h2>Meu portfólio</h2>
-      <p><!-- Adicione aqui links para seus projetos, GitHub, etc. --></p>
-    </section>
-
-    <!-- Seção Contato -->
-    <section id="contato">
-      <h2>Contato</h2>
       <p>
-        <!-- Pode colocar email, redes sociais ou um formulário se quiser expandir -->
+        Cursando Análise e Desenvolvimento de Sistemas, formação fullstack pela
+        trybe e certificado inglês C2 pela Education First.
       </p>
     </section>
 
-    <!-- Rodapé opcional -->
+    <!-- Portfólio -->
+    <section id="portfolio" class="container">
+      <h2>Alguns projetos desenvolvidos</h2>
+      <div class="portfolio-grid">
+        <div class="projeto">
+          <a href="https://github.com/lucazgbrl/connectlocal" target="_blank">
+            <img src="Welcome.png" id="connectlocal" alt="Projeto 1" />
+            <p>- ConnectLocal -</p>
+            <p>
+              Aplicativo de rede social para conectar pessoas com interesses
+              semelhantes, permitindo a criação de perfis, postagens e
+              interações em tempo real(em desenvolvimento).
+            </p>
+          </a>
+        </div>
+        <div class="projeto">
+          <a
+            href="https://my-wallet-dclhgvim0-lucazgbrls-projects.vercel.app"
+            target="_blank"
+          >
+            <img src="simple_wallet.jpeg" id="simplewallet" alt="Projeto 2" />
+            <p>- Simple Wallet -</p>
+            <p>
+              Aplicativo simples para gestão de finanças, onde o usuário pode
+              adicionar despesas, converter para outras moedas e calcular
+              confome desejar.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container">
+      <h2>Contato</h2>
+      <p>
+        Email: lcs.gabriel39@gmail.com<br />
+        LinkedIn: linkedin.com/in/lucazgbrl<br />
+        GitHub: github.com/lucazgbrl
+      </p>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-      <p>&copy; 2025 - Seu nome aqui</p>
+      <p>&copy; 2025 Lucas Gabriel</p>
     </footer>
 
-    <!-- Script JS -->
     <script src="script.js"></script>
   </body>
 </html>

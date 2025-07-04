@@ -6,56 +6,136 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  caret-color: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
-/* Menu de navegação fixo no topo */
+/* Cabeçalho fixo */
 header {
-  background-color: #333;
-  padding: 10px 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  background: #1f1f1f;
+  padding: 15px 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
+  list-style: none;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #bbb;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #00bcd4;
 }
 
-/* Seções da página */
-section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: auto;
-  border-bottom: 1px solid #ddd;
+/* Container comum para seções */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  border-bottom: 1px solid #333;
 }
 
-section h2 {
-  margin-bottom: 20px;
-  color: #222;
+/* Títulos */
+h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #00bcd4;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit; /* mantém a mesma cor mesmo depois de clicado */
+}
+
+/* Sobre mim */
+.sobre-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.foto-sobre {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  box-shadow: 0 0 10px #00bcd4aa;
+}
+
+/* Portfólio */
+.portfolio-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projeto {
+  background: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.projeto img {
+  width: 100%;
+  display: block;
+}
+
+.projeto #simplewallet {
+  width: 100%;
+  height: 497px;
+  object-fit: cover;
+}
+
+.projeto p {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00bcd4;
+}
+
+/* Contato */
+#contato p {
+  font-size: 1.1rem;
+  color: #bbb;
+  line-height: 1.8;
 }
 
 /* Rodapé */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  margin-top: 40px;
+  padding: 25px 0;
+  background-color: #1f1f1f;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 50px;
 }
